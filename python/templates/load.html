@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading the Website</title>
+    <link rel="stylesheet" href="../static/loadstyles.css">
+    <script>
+      function navigate() {
+          window.location.href = 'data';  // Redirects user to the /map route when 'create_map' is finished
+      }
+      fetch('create_map').then(navigate); // Performing 'create_map' and then calls navigate() function, declared above
+  </script>
+</head>
+<body>
+    <div id="waiting_pg">
+        <div id="heading">Please wait till we Load your Page</div>
+        <div id="gif"><img src="../static/load_gif .gif" alt="Loading..."></div>
+    </div>
+</body>
+</html>
