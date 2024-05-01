@@ -1,5 +1,4 @@
-# Kavach-Final
-Team Name: Bloquedors
+# Obscene Content Blocker
 
 
 Requirements:
